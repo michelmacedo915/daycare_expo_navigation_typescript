@@ -1,25 +1,11 @@
-import Colors from "@/constants/Colors";
-import { StyleSheet } from "react-native";
+import TimelineItem from "@/components/TimelineItem";
+import timelines from "@assets/data/timelines";
+import { View } from "react-native";
 
-import { Text, View } from "@/components/Themed";
-
-export default function Home() {
+export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
+    <View>
+      <TimelineItem timeline={timelines[0]} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: Colors.light.tint,
-  },
-});

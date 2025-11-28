@@ -1,3 +1,12 @@
+export type Timeline = {
+  id: number;
+  headline: string;
+  date: string;
+  educator: string;
+  room: string;
+  description: string;
+};
+
 export type Product = {
   id: number;
   image: string | null;
