@@ -7,6 +7,13 @@ export type Timeline = {
   description: string;
 };
 
+export type Event = {
+  id: number,
+  bottles: number,
+  napTime: number,
+  nappies: number,
+};
+
 export type Product = {
   id: number;
   image: string | null;
