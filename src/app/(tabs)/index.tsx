@@ -1,8 +1,9 @@
+import Colors from "@/constants/Colors";
 import { StyleSheet } from "react-native";
 
 import { Text, View } from "@/components/Themed";
 
-export default function TabOneScreen() {
+export default function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab One</Text>
@@ -19,5 +20,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: "bold",
+    color: Colors.light.tint,
   },
 });
