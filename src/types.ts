@@ -14,6 +14,17 @@ export type Event = {
   nappies: number,
 };
 
+export type Calendar = {
+  id: number,
+  sunday: boolean,
+  monday: boolean,
+  tuesday: boolean,
+  wednesday: boolean,
+  thursday: boolean,
+  friday: boolean,
+  saturday: boolean,
+};
+
 export type Product = {
   id: number;
   image: string | null;
