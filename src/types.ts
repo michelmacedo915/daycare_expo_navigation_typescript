@@ -25,6 +25,13 @@ export type Calendar = {
   saturday: boolean,
 };
 
+export type Family = {
+  id: number,
+  childname1: string,
+  childname2: string,
+  childname3: string,
+};
+
 export type Product = {
   id: number;
   image: string | null;
