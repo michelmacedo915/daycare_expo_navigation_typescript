@@ -1,3 +1,47 @@
+export type Timeline = {
+  id: number;
+  headline: string;
+  date: string;
+  educator: string;
+  room: string;
+  description: string;
+};
+
+export type Event = {
+  id: number,
+  bottles: number,
+  napTime: number,
+  nappies: number,
+};
+
+export type Calendar = {
+  id: number,
+  sunday: boolean,
+  monday: boolean,
+  tuesday: boolean,
+  wednesday: boolean,
+  thursday: boolean,
+  friday: boolean,
+  saturday: boolean,
+};
+
+export type Family = {
+  id: number,
+  childname1: string,
+  childname2: string,
+  childname3: string,
+};
+
+export type Communication = {
+  id: number,
+  comms: string,
+};
+
+export type Gallery = {
+  id: number,
+  gallerytext: string,
+};
+
 export type Product = {
   id: number;
   image: string | null;

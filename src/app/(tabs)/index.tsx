@@ -1,23 +1,22 @@
-import { StyleSheet } from "react-native";
+import BottomItems from "@/components/BottomItems";
+import CalendarItem from "@/components/CalendarItem";
+import EventChild from "@/components/EventChild";
+import FamilyItem from "@/components/FamilyItem";
+import TimelineItem from "@/components/TimelineItem";
+import calendar from "@assets/data/calendar";
+import events from "@assets/data/events";
+import family from "@assets/data/family";
+import timelines from "@assets/data/timelines";
+import { View } from "react-native";
 
-import { Text, View } from "@/components/Themed";
-
-export default function TabOneScreen() {
+export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
+    <View>
+      <TimelineItem timeline={timelines[0]} />
+      <EventChild event={events[0]} />
+      <CalendarItem calendar={calendar[0]} />
+      <FamilyItem family={family[0]} />
+      <BottomItems />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-});
