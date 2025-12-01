@@ -1,4 +1,4 @@
-const timelines = [
+const activities = [
   {
     id: 1,
     headline: 'Emotion Faces Matching Games',
@@ -18,4 +18,4 @@ const timelines = [
 
 ];
 
-export default timelines;
+export default activities;

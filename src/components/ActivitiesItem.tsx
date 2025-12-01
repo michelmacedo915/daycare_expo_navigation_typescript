@@ -1,20 +1,20 @@
 import Colors from "@constants/Colors";
 import { Image, StyleSheet, Text, View } from "react-native";
-import { Timeline } from "../types";
+import { Activities } from "../types";
 
-type TimelineItemProps = {
-  timeline: Timeline;
+type ActivitiesItemProps = {
+  activities: Activities;
 };
 
-const TimelineItem = ({ timeline }: TimelineItemProps) => {
+const ActivitiesItem = ({ activities }: ActivitiesItemProps) => {
   return (
     <View>
-      <View style={styles.timelineText}>
-        <Text style={styles.title}>Timeline</Text>
-        <Text style={styles.headline}>{timeline.headline}</Text>
+      <View style={styles.activitiesText}>
+        <Text style={styles.title}>Activities</Text>
+        <Text style={styles.headline}>{activities.headline}</Text>
         <Text style={styles.seemore}>See more...</Text>
       </View>
-      <View style={styles.timelineImage}>
+      <View style={styles.activitiesImage}>
         <Image
           source={require("@assets/images/heart.png")}
           style={styles.heartLogo}
@@ -24,11 +24,11 @@ const TimelineItem = ({ timeline }: TimelineItemProps) => {
   );
 };
 
-export default TimelineItem;
+export default ActivitiesItem;
 
 const styles = StyleSheet.create({
-  timelineText: {
-    backgroundColor: "#B2A1FF",
+  activitiesText: {
+    backgroundColor: "#592EF2",
     marginHorizontal: 20,
     padding: 20,
     borderRadius: 25,
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 180,
   },
-  timelineImage: {
+  activitiesImage: {
     position: "absolute",
     marginHorizontal: 10,
     marginTop: 45,

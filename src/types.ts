@@ -1,4 +1,4 @@
-export type Timeline = {
+export type Activities = {
   id: number;
   headline: string;
   date: string;
