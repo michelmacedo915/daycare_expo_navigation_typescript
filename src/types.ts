@@ -32,6 +32,16 @@ export type Family = {
   childname3: string,
 };
 
+export type Communication = {
+  id: number,
+  comms: string,
+};
+
+export type Gallery = {
+  id: number,
+  gallerytext: string,
+};
+
 export type Product = {
   id: number;
   image: string | null;

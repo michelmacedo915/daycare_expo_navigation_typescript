@@ -1,3 +1,4 @@
+import BottomItems from "@/components/BottomItems";
 import CalendarItem from "@/components/CalendarItem";
 import EventChild from "@/components/EventChild";
 import FamilyItem from "@/components/FamilyItem";
@@ -15,6 +16,7 @@ export default function HomeScreen() {
       <EventChild event={events[0]} />
       <CalendarItem calendar={calendar[0]} />
       <FamilyItem family={family[0]} />
+      <BottomItems />
     </View>
   );
 }
