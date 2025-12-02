@@ -1,26 +1,25 @@
+import activities from "@assets/data/activities";
 import Colors from "@constants/Colors";
-import { Image, StyleSheet, Text, View } from "react-native";
-import { Activities } from "../types";
+import { Link } from "expo-router";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 
-type ActivitiesItemProps = {
-  activities: Activities;
-};
-
-const ActivitiesItem = ({ activities }: ActivitiesItemProps) => {
+const ActivitiesItem = () => {
   return (
-    <View>
-      <View style={styles.activitiesText}>
-        <Text style={styles.title}>Activities</Text>
-        <Text style={styles.headline}>{activities.headline}</Text>
-        <Text style={styles.seemore}>See more...</Text>
-      </View>
-      <View style={styles.activitiesImage}>
-        <Image
-          source={require("@assets/images/heart.png")}
-          style={styles.heartLogo}
-        />
-      </View>
-    </View>
+    <Link href={"/activitylist"} asChild>
+      <Pressable>
+        <View style={styles.activitiesText}>
+          <Text style={styles.title}>Activities</Text>
+          <Text style={styles.headline}>{activities[0].headline}</Text>
+          <Text style={styles.seemore}>See more...</Text>
+        </View>
+        <View style={styles.activitiesImage}>
+          <Image
+            source={require("@assets/images/heart.png")}
+            style={styles.heartLogo}
+          />
+        </View>
+      </Pressable>
+    </Link>
   );
 };
 
