@@ -42,6 +42,13 @@ export type Gallery = {
   gallerytext: string,
 };
 
+export type Child = {
+  id: number,
+  name: string,
+  educator: string,
+  room: string,
+};
+
 export type Product = {
   id: number;
   image: string | null;
